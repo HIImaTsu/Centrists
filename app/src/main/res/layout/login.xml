@@ -22,5 +22,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_below="@+id/signin"
+        android:background="#30ffffff"
+        android:hint="Username"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
         />
 </RelativeLayout>
