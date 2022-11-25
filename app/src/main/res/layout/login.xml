@@ -52,4 +52,11 @@
     <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/loginbtn"
+        android:layout_below="@+id/password"
+        android:text="LOGIN"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        />
 </RelativeLayout>
