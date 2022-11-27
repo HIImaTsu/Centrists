@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
     private fun setNewFragment(fragment: Fragment) {
         val manager = supportFragmentManager.beginTransaction()
         manager.replace(R.id.frame_layout, fragment)
+        manager.addToBackStack(null)
         manager.commit()
     }
 
