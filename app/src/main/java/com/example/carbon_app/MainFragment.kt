@@ -16,9 +16,9 @@ class MainFragment : Fragment() {
 
         val binding = FragmentMainBinding.inflate(inflater, container, false)
 
-        binding.signUp.setOnClickListener { view: View ->
-            view.findNavController().navigate(R.id.action_mainFragment_to_signUpFragment)
-        }
+//        binding.signUp.setOnClickListener { view: View ->
+//            view.findNavController().navigate(R.id.action_mainFragment_to_secondFragment)
+//        }
 
         return binding.root
     }
