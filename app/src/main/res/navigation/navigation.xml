@@ -6,17 +6,21 @@
     app:startDestination="@id/mainFragment">
 
     <fragment
-        android:id="@+id/signUpFragment"
-        android:name="com.example.carbon_app.SignUpFragment"
+        android:id="@+id/SecondFragment"
+        android:name="com.example.carbon_app.SecondFragment"
         android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" />
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_SecondFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.carbon_app.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_mainFragment_to_signUpFragment"
-            app:destination="@id/signUpFragment" />
+            android:id="@+id/action_mainFragment_to_secondFragment"
+            app:destination="@id/SecondFragment" />
     </fragment>
 </navigation>
