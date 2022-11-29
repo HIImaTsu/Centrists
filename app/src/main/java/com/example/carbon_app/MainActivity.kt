@@ -22,6 +22,31 @@ class MainActivity : AppCompatActivity() {
     private val thirdFragment = ThirdFragment()
     private val mainFragment = MainFragment()
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        tabItem = findViewById(R.id.first)
+        tabItem2 = findViewById(R.id.second)
+        tabItem3 = findViewById(R.id.third)
+
+        tabItem.setOnClickListener{
+            setNewFragment(mainFragment)
+        }
+        tabItem2.setOnClickListener{
+            setNewFragment(secondFragment)
+        }
+        tabItem3.setOnClickListener{
+            setNewFragment(thirdFragment)
+        }
+    }
+
+    private fun setNewFragment(fragment: Fragment) {
+        val manager = supportFragmentManager.beginTransaction()
+        manager.replace(R.id.frame_layout, fragment)
+        manager.addToBackStack(null)
+        manager.commit()
+    }
 
 
 }
