@@ -7,5 +7,9 @@ import androidx.fragment.app.FragmentPagerAdapter
 
 class VPAdapter(fm: FragmentManager, behavior: Int) : FragmentPagerAdapter(fm, behavior) {
 
+    private var fragmentArrayList: ArrayList<Fragment> = ArrayList()
+    private var fragmentTitle: ArrayList<String> = ArrayList()
+
+
 
 }
