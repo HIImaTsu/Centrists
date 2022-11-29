@@ -11,5 +11,13 @@ class VPAdapter(fm: FragmentManager, behavior: Int) : FragmentPagerAdapter(fm, b
     private var fragmentTitle: ArrayList<String> = ArrayList()
 
 
+    override fun getCount(): Int {
+        return fragmentArrayList.size
+    }
+
+    override fun getItem(position: Int): Fragment {
+        return fragmentArrayList.get(position)
+    }
+
 
 }
