@@ -15,6 +15,16 @@ import com.google.android.material.tabs.TabLayout
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var tabItem: TabItem
+    private lateinit var tabItem2: TabItem
+    private lateinit var tabItem3: TabItem
+    private val secondFragment = SecondFragment()
+    private val thirdFragment = ThirdFragment()
+    private val mainFragment = MainFragment()
+
+
+
+}
 
 
 
