@@ -6,9 +6,5 @@
     tools:context=".MainFragment">
 
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RadioButton" />
+    
 </FrameLayout>
