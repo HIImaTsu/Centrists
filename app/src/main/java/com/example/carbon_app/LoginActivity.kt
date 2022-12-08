@@ -25,6 +25,7 @@ class LoginActivity : AppCompatActivity() {
 
         if(username.text.toString() == "admin" && password.text.toString() == "admin"){
             Toast.makeText(this,"LOGIN SUCCESSFUL", Toast.LENGTH_SHORT).show()
+            // onClick event handler
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
 
