@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
-            private fun onClick(){
+    private fun onClick(){
         val username : TextView = findViewById(R.id.username)
         val password : TextView = findViewById(R.id.password)
 
@@ -33,4 +33,4 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
-    }
+}
