@@ -14,18 +14,17 @@ import androidx.fragment.app.FragmentPagerAdapter
 import androidx.fragment.app.FragmentTransaction
 import androidx.viewpager.widget.ViewPager
 import com.example.carbon_app.databinding.FragmentMainBinding
-<<<<<<< HEAD
+
 import com.google.android.material.tabs.TabItem
-=======
->>>>>>> 482c44712054975ce10eef2ceeb9545b15102e82
+
 import com.google.android.material.tabs.TabLayout
 
 class MainActivity : AppCompatActivity() {
 
-<<<<<<< HEAD
-=======
+
     private lateinit var tableLayout : TabLayout
     private lateinit var viewPager: ViewPager
+
     private val mainFragment = MainFragment()
     private val secondFragment = SecondFragment()
     private val thirdFragment = ThirdFragment()
@@ -34,6 +33,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         tableLayout = findViewById(R.id.tabLayout)
         viewPager = findViewById(R.id.viewpager)
@@ -48,11 +48,6 @@ class MainActivity : AppCompatActivity() {
         vpAdapter.addFragment(secondFragment, "2FLOOR")
         vpAdapter.addFragment(thirdFragment, "3FLOOR")
         viewPager.adapter = vpAdapter
-
-
-
-
->>>>>>> 482c44712054975ce10eef2ceeb9545b15102e82
 
 
 

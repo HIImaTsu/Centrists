@@ -15,55 +15,44 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.tabs.TabItem
-<<<<<<< HEAD
             android:id="@+id/first"
-=======
->>>>>>> 482c44712054975ce10eef2ceeb9545b15102e82
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1Floor" />
 
         <com.google.android.material.tabs.TabItem
-<<<<<<< HEAD
+
             android:id="@+id/second"
-=======
->>>>>>> 482c44712054975ce10eef2ceeb9545b15102e82
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2Floor" />
 
         <com.google.android.material.tabs.TabItem
-<<<<<<< HEAD
+
             android:id="@+id/third"
-=======
->>>>>>> 482c44712054975ce10eef2ceeb9545b15102e82
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3Floor" />
     </com.google.android.material.tabs.TabLayout>
 
-<<<<<<< HEAD
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="20dp"
-=======
+        android:layout_marginBottom="20dp" />
+
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="384dp"
         android:layout_height="666dp"
         android:contentDescription="@string/app_name"
->>>>>>> 482c44712054975ce10eef2ceeb9545b15102e82
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintStart_toStartOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout">
-=======
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
         app:layout_constraintTop_toBottomOf="@+id/tabLayout"
         app:layout_constraintVertical_bias="0.058" />
->>>>>>> 482c44712054975ce10eef2ceeb9545b15102e82
 
 </androidx.constraintlayout.widget.ConstraintLayout>

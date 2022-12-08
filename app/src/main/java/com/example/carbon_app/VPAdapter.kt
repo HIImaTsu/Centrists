@@ -16,13 +16,14 @@ class VPAdapter(fm: FragmentManager, behavior: Int) : FragmentPagerAdapter(fm, b
     }
 
     override fun getItem(position: Int): Fragment {
-<<<<<<< HEAD
+
         return fragmentArrayList.get(position)
     }
 
 
-=======
+
         return fragmentArrayList[position]
+
     }
 
     fun addFragment(Fragment: Fragment, title: String){
@@ -33,7 +34,6 @@ class VPAdapter(fm: FragmentManager, behavior: Int) : FragmentPagerAdapter(fm, b
 
     override fun getPageTitle(position: Int): CharSequence? {
 
-        return fragmentTitle[position]
     }
->>>>>>> 482c44712054975ce10eef2ceeb9545b15102e82
+
 }
