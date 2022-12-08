@@ -71,5 +71,24 @@
         android:layout_below="@+id/loginbtn"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
+/>
+
+    <TextView
+        android:id="@+id/attempt_left"
+        android:layout_width="97dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:text="Attempt Left:"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textColor="#FF0000" />
 
 </RelativeLayout>
