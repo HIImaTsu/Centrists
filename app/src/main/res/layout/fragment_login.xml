@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".LoginActivity">
+    tools:context=".LoginFragment">
 
     <TextView
         android:id="@+id/signin"
@@ -71,11 +71,6 @@
         android:layout_below="@+id/loginbtn"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
-<<<<<<< HEAD
-        />
-
-
-=======
         android:text="Forgot password?"
         android:textColor="@color/white"
 
@@ -100,5 +95,4 @@
         android:text="TextView"
         android:textColor="#FF0000" />
 
->>>>>>> 482c44712054975ce10eef2ceeb9545b15102e82
 </RelativeLayout>
