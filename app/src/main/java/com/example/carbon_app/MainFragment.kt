@@ -5,9 +5,12 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.carbon_app.databinding.FragmentMainBinding
+import com.google.android.material.tabs.TabLayout
 
 
 class MainFragment : Fragment() {
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

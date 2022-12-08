@@ -1,14 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainFragment">
+    tools:context=".MainFragment"
+    android:background="@drawable/sdu">
+
+    <Button
+        android:id="@+id/eblock"
+        android:layout_width="128dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="283dp"
+        android:text="E BLOCK"
+        app:layout_constraintBottom_toTopOf="@+id/dblock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fblock" />
+
+    <Button
+        android:id="@+id/hblock"
+        android:layout_width="128dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="283dp"
+        android:text="H BLOCK"
+        app:layout_constraintBottom_toTopOf="@+id/gblock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gblock"
+        android:layout_width="128dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="283dp"
+        android:text="G BLOCK"
+        app:layout_constraintBottom_toTopOf="@+id/fblock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hblock" />
+
+    <Button
+        android:id="@+id/fblock"
+        android:layout_width="128dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="283dp"
+        android:text="Engineer and Natural Sciences"
+        app:layout_constraintBottom_toTopOf="@+id/eblock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gblock" />
+
+    <Button
+        android:id="@+id/eblock"
+        android:layout_width="128dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="283dp"
+        android:text="E BLOCK"
+        app:layout_constraintBottom_toTopOf="@+id/dblock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fblock" />
+
+    <Button
+        android:id="@+id/dblock"
+        android:layout_width="128dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="283dp"
+        android:layout_marginBottom="114dp"
+        android:text="D BLOCK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eblock" />
 
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RadioButton" />
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

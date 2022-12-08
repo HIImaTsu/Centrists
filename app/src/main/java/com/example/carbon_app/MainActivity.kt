@@ -8,6 +8,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentPagerAdapter
 
 import androidx.viewpager.widget.ViewPager
+import com.example.carbon_app.databinding.FragmentMainBinding
+
+import com.google.android.material.tabs.TabItem
+
 import com.google.android.material.tabs.TabLayout
 
 class MainActivity : AppCompatActivity() {
@@ -47,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
 //    private fun setNewFragment(fragment: Fragment) {
 //        val manager = supportFragmentManager.beginTransaction()
-//        manager.replace(R.id.tabLayout, fragment)
+//        manager.replace(R.id.frame_layout, fragment)
 //        manager.addToBackStack(null)
 //        manager.commit()
 //    }
