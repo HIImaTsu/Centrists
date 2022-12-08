@@ -18,7 +18,8 @@
         app:layout_constraintBottom_toTopOf="@+id/gblock"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#76768F"/>
 
     <Button
         android:id="@+id/gblock"
@@ -29,7 +30,8 @@
         app:layout_constraintBottom_toTopOf="@+id/fblock"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hblock" />
+        app:layout_constraintTop_toBottomOf="@+id/hblock"
+        android:backgroundTint="#76768F"/>
 
     <Button
         android:id="@+id/fblock"
@@ -40,7 +42,8 @@
         app:layout_constraintBottom_toTopOf="@+id/eblock"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gblock" />
+        app:layout_constraintTop_toBottomOf="@+id/gblock"
+        android:backgroundTint="#76768F"/>
 
     <Button
         android:id="@+id/eblock"
@@ -51,7 +54,8 @@
         app:layout_constraintBottom_toTopOf="@+id/dblock"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fblock" />
+        app:layout_constraintTop_toBottomOf="@+id/fblock"
+        android:backgroundTint="#76768F"/>
 
     <Button
         android:id="@+id/dblock"
@@ -63,7 +67,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eblock" />
+        app:layout_constraintTop_toBottomOf="@+id/eblock"
+        android:backgroundTint="#76768F"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
