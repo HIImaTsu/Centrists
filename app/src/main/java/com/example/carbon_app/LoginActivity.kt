@@ -23,40 +23,41 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = LoginBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
+        setContentView(R.layout.login)
         val login2: Button = findViewById(R.id.loginbtn)
         login2.setOnClickListener {
             onClick()
         }
-//        navController = Navigation.findNavController(this , R.id.frame_layout)
-//        setupWithNavController(binding.shablonFragment.bottomNavigationView , navController)
+
     }
 
 
     private fun onClick(){
         val username : TextView = findViewById(R.id.username)
         val password : TextView = findViewById(R.id.password)
+        setNewFragment()
 
-
-        if(username.text.toString() == "admin" && password.text.toString() == "admin"){
-            Toast.makeText(this,"LOGIN SUCCESSFUL", Toast.LENGTH_SHORT).show()
-            setNewFragment()
-            // onClick event handler
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-11
-        }else
-            Toast.makeText(this,"LOGIN FAILED!!!", Toast.LENGTH_SHORT).show()
+//        if(username.text.toString() == "admin" && password.text.toString() == "admin"){
+//            setNewFragment()
+//            // onClick event handler
+////            val intent = Intent(this, MainActivity::class.java)
+////            startActivity(intent)
+//11
+//        }else
+//            Toast.makeText(this,"LOGIN FAILED!!!", Toast.LENGTH_SHORT).show()
     }
         private fun setNewFragment() {
+
         val manager = supportFragmentManager.beginTransaction()
-        manager.replace(R.id.rev_layout, shablonFragment)
-        manager.addToBackStack(null)
+        manager.replace(R.id.rev_layout, ShablonFragment())
         manager.commit()
     }
 
 
 }
+//        binding = LoginBinding.inflate(layoutInflater)
+//        setContentView(binding.root)
+
+//        navController = Navigation.findNavController(this , R.id.frame_layout)
+//        setupWithNavController(binding.shablonFragment.bottomNavigationView , navController)
+
