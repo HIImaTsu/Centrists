@@ -10,12 +10,12 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_mainActivity"
-            app:destination="@id/mainActivity" />
+            android:id="@+id/action_loginFragment_to_shablonFragment"
+            app:destination="@id/shablonFragment" />
     </fragment>
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.carbon_app.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/shablonFragment"
+        android:name="com.example.carbon_app.ShablonFragment"
+        android:label="fragment_shablon"
+        tools:layout="@layout/fragment_shablon" />
 </navigation>

@@ -29,9 +29,10 @@ class LoginFragment : Fragment() {
         val binding = FragmentLoginBinding.inflate(inflater, container, false)
 
                 binding.loginbtn.setOnClickListener { view: View ->
-            view.findNavController().navigate(R.id.action_loginFragment_to_mainActivity)
+            view.findNavController().navigate(R.id.action_loginFragment_to_shablonFragment)
 
         }
+
         return binding.root
 }
     }

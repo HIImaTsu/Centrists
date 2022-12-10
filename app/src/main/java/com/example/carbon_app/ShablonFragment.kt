@@ -23,23 +23,31 @@ class ShablonFragment : Fragment() {
         // Inflate the layout for this fragment
 
         val binding = FragmentShablonBinding.inflate(inflater, container, false)
-//        binding.bottomNavigationView.setOnItemSelectedListener {id ->
-//            when (id) {
-//                R.id.home -> setNewFragment(mainFragment)
-//                R.id.faculty -> setNewFragment(secondFragment)
-//                R.id.person -> setNewFragment(thirdFragment)
-//                else -> {R.id.exit -> setNewFragment(mainFragment)}
-//            }
-//        }
+        setNewFragment(mainFragment)
+        binding.bottomNavigationView.setOnItemSelectedListener {
+            when(it.itemId){
+                R.id.home -> setNewFragment(mainFragment)
+                R.id.faculty -> setNewFragment(secondFragment)
+                R.id.person -> setNewFragment(thirdFragment)
+                R.id.exit -> {setNewFragment(mainFragment)}
+            }
+            true
+        }
 
         return binding.root
     }
 
-    fun setNewFragment(fragment: Fragment) {
-        val manager = childFragmentManager.beginTransaction()
-        manager.replace(R.id.frame_layout, fragment)
-        manager.addToBackStack(null)
-        manager.commit()
+
+    private fun setNewFragment(fragment: Fragment) {
+        if(fragment !=null){
+            val manager = childFragmentManager.beginTransaction()
+            manager.replace(R.id.frame_layout, fragment)
+            manager.addToBackStack(null)
+            manager.commit()
+        }
+
     }
 }
+
+
 
