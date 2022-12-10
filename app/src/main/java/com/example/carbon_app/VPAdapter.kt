@@ -1,6 +1,5 @@
 package com.example.carbon_app
 
-import android.icu.text.CaseMap.Title
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter

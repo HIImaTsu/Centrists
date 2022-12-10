@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_loginFragment_to_shablonFragment"
             app:destination="@id/shablonFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_shablonFragment2"
+            app:destination="@id/shablonFragment" />
     </fragment>
     <fragment
         android:id="@+id/shablonFragment"

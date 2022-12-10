@@ -1,11 +1,10 @@
 package com.example.carbon_app
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.carbon_app.databinding.FragmentMainBinding
+import androidx.fragment.app.Fragment
 import com.example.carbon_app.databinding.FragmentShablonBinding
 
 
@@ -14,6 +13,7 @@ class ShablonFragment : Fragment() {
     private val mainFragment = MainFragment()
     private val secondFragment = SecondFragment()
     private val thirdFragment = ThirdFragment()
+
 
 
     override fun onCreateView(
@@ -42,7 +42,6 @@ class ShablonFragment : Fragment() {
         if(fragment !=null){
             val manager = childFragmentManager.beginTransaction()
             manager.replace(R.id.frame_layout, fragment)
-            manager.addToBackStack(null)
             manager.commit()
         }
 
