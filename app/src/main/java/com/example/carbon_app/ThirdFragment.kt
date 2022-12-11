@@ -10,10 +10,6 @@ import android.view.ViewGroup
 class ThirdFragment : Fragment() {
 
 
-
-class ThirdFragment : Fragment() {
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -24,4 +20,5 @@ class ThirdFragment : Fragment() {
 
 }
 
-}
+
+

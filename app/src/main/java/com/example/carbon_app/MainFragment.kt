@@ -1,11 +1,11 @@
 package com.example.carbon_app
 
 import android.os.Bundle
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
 import com.example.carbon_app.databinding.FragmentMainBinding
-import com.google.android.material.tabs.TabLayout
 
 
 class MainFragment : Fragment() {

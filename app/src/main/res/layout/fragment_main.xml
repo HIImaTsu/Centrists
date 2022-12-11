@@ -7,12 +7,22 @@
     tools:context=".MainFragment"
     android:background="@drawable/sdu">
 
+    <Button
+        android:id="@+id/eblock"
+        android:layout_width="128dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="283dp"
+        android:text="E BLOCK"
+        app:layout_constraintBottom_toTopOf="@+id/dblock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fblock" />
 
     <Button
         android:id="@+id/hblock"
         android:layout_width="128dp"
         android:layout_height="140dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="90dp"
         android:layout_marginEnd="283dp"
         android:text="H BLOCK"
         app:layout_constraintBottom_toTopOf="@+id/gblock"
@@ -45,6 +55,7 @@
         app:layout_constraintTop_toBottomOf="@+id/gblock"
         android:backgroundTint="#76768F"/>
 
+
     <Button
         android:id="@+id/eblock"
         android:layout_width="128dp"
@@ -56,6 +67,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fblock"
         android:backgroundTint="#76768F"/>
+
 
     <Button
         android:id="@+id/dblock"
