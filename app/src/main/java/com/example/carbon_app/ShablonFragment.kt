@@ -1,5 +1,6 @@
 package com.example.carbon_app
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -32,6 +33,10 @@ class ShablonFragment : Fragment() {
                 R.id.faculty -> setNewFragment(secondFragment)
                 R.id.person -> setNewFragment(thirdFragment)
 
+                R.id.exit -> {val intent = Intent(context, LoginActivity::class.java)
+            startActivity(intent)
+                }
+
                 else -> {setNewFragment(mainFragment)}
             }
             true
@@ -45,10 +50,10 @@ class ShablonFragment : Fragment() {
         manager.addToBackStack(null)
         manager.commit()
                 R.id.exit -> {setNewFragment(mainFragment)}
+
             }
             true
         }
-
         return binding.root
     }
 
