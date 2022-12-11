@@ -17,6 +17,7 @@ class ShablonFragment : Fragment() {
 
 
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -49,24 +50,15 @@ class ShablonFragment : Fragment() {
         manager.replace(R.id.frame_layout, fragment)
         manager.addToBackStack(null)
         manager.commit()
-                R.id.exit -> {setNewFragment(mainFragment)}
 
             }
-            true
-        }
-        return binding.root
-    }
 
-
-    private fun setNewFragment(fragment: Fragment) {
-        if(fragment !=null){
-            val manager = childFragmentManager.beginTransaction()
-            manager.replace(R.id.frame_layout, fragment)
-            manager.commit()
         }
 
-    }
-}
+
+
+
+
 
 
 
