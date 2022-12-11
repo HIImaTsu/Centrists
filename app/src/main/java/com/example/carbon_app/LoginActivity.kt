@@ -48,9 +48,9 @@ class LoginActivity : AppCompatActivity() {
 //        if(username.text.toString() == "admin" && password.text.toString() == "admin"){
 //            setNewFragment()
 //            // onClick event handler
-////            val intent = Intent(this, MainActivity::class.java)
-////            startActivity(intent)
-//11
+//            val intent = Intent(this, MainActivity::class.java)
+//            startActivity(intent)
+//
 //        }else
 //
 //        binding = LoginBinding.inflate(layoutInflater)
