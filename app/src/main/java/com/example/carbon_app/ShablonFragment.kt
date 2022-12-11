@@ -36,7 +36,6 @@ class ShablonFragment : Fragment() {
             }
             true
         }
-
         return binding.root
     }
 

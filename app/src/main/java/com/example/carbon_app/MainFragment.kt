@@ -1,5 +1,6 @@
 package com.example.carbon_app
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -19,6 +20,10 @@ class MainFragment : Fragment() {
 
         val binding = FragmentMainBinding.inflate(inflater, container, false)
 
+        binding.fblock.setOnClickListener{
+            val intent = Intent(context, MainActivity::class.java)
+            startActivity(intent)
+        }
 //        binding.signUp.setOnClickListener { view: View ->
 //            view.findNavController().navigate(R.id.action_mainFragment_to_secondFragment)
 //        }
