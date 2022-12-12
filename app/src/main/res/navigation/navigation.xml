@@ -3,24 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/mainFragment">
-
+    app:startDestination="@id/loginFragment">
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.carbon_app.SecondFragment"
-        android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_second" >
+        android:id="@+id/loginFragment"
+        android:name="com.example.carbon_app.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_SecondFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
+            android:id="@+id/action_loginFragment_to_shablonFragment"
+            app:destination="@id/shablonFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_shablonFragment2"
+            app:destination="@id/shablonFragment" />
     </fragment>
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.example.carbon_app.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
-        <action
-            android:id="@+id/action_mainFragment_to_secondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
+        android:id="@+id/shablonFragment"
+        android:name="com.example.carbon_app.ShablonFragment"
+        android:label="fragment_shablon"
+        tools:layout="@layout/fragment_shablon" />
 </navigation>

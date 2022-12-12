@@ -13,6 +13,7 @@ class SecondFragment : Fragment() {
     ): View {
         val binding = FragmentSecondBinding.inflate(inflater, container, false)
         return binding.root
+
     }
 }
 
