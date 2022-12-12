@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 class FacultyAdapter(private val facultyList:ArrayList<Faculty>)
     :RecyclerView.Adapter<FacultyAdapter.FacultyViewHolder>(){
 
+    var onItemClick : ((Faculty) -> Unit)? = null
+
         class FacultyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
             val imageView : ImageView =itemView.findViewById(R.id.imageview)
             val textView : TextView = itemView.findViewById(R.id.textview)
@@ -26,6 +28,10 @@ class FacultyAdapter(private val facultyList:ArrayList<Faculty>)
         val faculty = facultyList[position]
         holder.imageView.setImageResource(faculty.image)
         holder.textView.text = faculty.name
+
+        holder.itemView.setOnClickListener{
+            onItemClick?.invoke(faculty)
+        }
     }
     override fun getItemCount(): Int {
         return facultyList.size

@@ -1,5 +1,6 @@
 package com.example.carbon_app
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
@@ -25,15 +26,21 @@ class SecondFragment : Fragment() {
 
         facultyList = ArrayList()
 
-        facultyList.add(Faculty(R.drawable.sdulogo, "SDU"))
-        facultyList.add(Faculty(R.drawable.sdulogo, "SDU"))
-        facultyList.add(Faculty(R.drawable.sdulogo, "SDU"))
-        facultyList.add(Faculty(R.drawable.sdulogo, "SDU"))
-        facultyList.add(Faculty(R.drawable.sdulogo, "SDU"))
+        facultyList.add(Faculty(R.drawable.bsh, "Школа Бизнеса СДУ"))
+        facultyList.add(Faculty(R.drawable.eng, "Факультет Инженерных и Естественных наук"))
+        facultyList.add(Faculty(R.drawable.law, "Факультет педагогики и гуманитарных наук"))
+        facultyList.add(Faculty(R.drawable.sdulogo, "Факультет права и социальных наук"))
+        facultyList.add(Faculty(R.drawable.sdulogo, "Новый Факультет "))
 
 
         facultyAdapter = FacultyAdapter(facultyList)
         recyclerView.adapter = facultyAdapter
+
+        facultyAdapter.onItemClick = {
+            val intent = Intent(context , DetailedActivity::class.java)
+            intent.putExtra("faculty", it)
+            startActivity(intent)
+        }
 
         return binding.root
 
