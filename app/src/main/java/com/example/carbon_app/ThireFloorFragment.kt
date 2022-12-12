@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 
-class blockf : Fragment() {
+class ThireFloorFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -15,7 +15,8 @@ class blockf : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_blockf, container, false)
+        return inflater.inflate(R.layout.fragment_thire_floor, container, false)
     }
-}
 
+
+}
