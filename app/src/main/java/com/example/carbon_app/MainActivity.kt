@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var tableLayout : TabLayout
     private lateinit var viewPager: ViewPager
-    private val blockf = blockf()
+    private val firstFLoorFragment = FirstFLoorFragment()
     private val thireFloorFragment = ThireFloorFragment()
     private val twoFloorFragment = TwoFloorFragment()
 
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val vpAdapter = VPAdapter(supportFragmentManager, FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT)
-        vpAdapter.addFragment(blockf, "1FLOOR")
+        vpAdapter.addFragment(firstFLoorFragment, "1FLOOR")
         vpAdapter.addFragment(twoFloorFragment, "2FLOOR")
         vpAdapter.addFragment(thireFloorFragment, "3FLOOR")
         viewPager.adapter = vpAdapter

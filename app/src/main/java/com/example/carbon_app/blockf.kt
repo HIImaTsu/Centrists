@@ -51,7 +51,7 @@ class ThirdFragment : Fragment() {
             firsName
         }
         GlobalScope.launch(Dispatchers.IO) {
-            appDb.OfficeDao().insert(Office_num()
+
 
         }
     }
