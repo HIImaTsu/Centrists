@@ -13,7 +13,7 @@ class ShablonFragment : Fragment() {
 
     private val mainFragment = MainFragment()
     private val secondFragment = SecondFragment()
-    private val thirdFragment = ThirdFragment()
+    private val portfolioFragment = PortfolioFragment()
 
 
 
@@ -32,7 +32,7 @@ class ShablonFragment : Fragment() {
             when(it.itemId){
                 R.id.home -> setNewFragment(mainFragment)
                 R.id.faculty -> setNewFragment(secondFragment)
-                R.id.person -> setNewFragment(thirdFragment)
+                R.id.person -> setNewFragment(portfolioFragment)
 
                 R.id.exit -> {val intent = Intent(context, LoginActivity::class.java)
             startActivity(intent)

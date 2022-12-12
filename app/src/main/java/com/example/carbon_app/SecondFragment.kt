@@ -27,9 +27,9 @@ class SecondFragment : Fragment() {
         facultyList = ArrayList()
 
         facultyList.add(Faculty(R.drawable.bsh, "Школа Бизнеса СДУ"))
-        facultyList.add(Faculty(R.drawable.eng, "Факультет Инженерных и Естественных наук"))
-        facultyList.add(Faculty(R.drawable.law, "Факультет педагогики и гуманитарных наук"))
-        facultyList.add(Faculty(R.drawable.sdulogo, "Факультет права и социальных наук"))
+        facultyList.add(Faculty(R.drawable.eng, "Факультет Инженерных"))
+        facultyList.add(Faculty(R.drawable.law, "Факультет педагогики"))
+        facultyList.add(Faculty(R.drawable.sdulogo, "Факультет права"))
         facultyList.add(Faculty(R.drawable.sdulogo, "Новый Факультет "))
 
 
