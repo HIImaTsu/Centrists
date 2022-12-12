@@ -5,6 +5,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
+import com.example.carbon_app.data.AppDatabase
+import com.example.carbon_app.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayout
 
 class MainActivity : AppCompatActivity() {
@@ -16,9 +18,14 @@ class MainActivity : AppCompatActivity() {
     private val thirdFragment = ThirdFragment()
 
 
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
 
         tableLayout = findViewById(R.id.tabLayout)
         viewPager = findViewById(R.id.viewpager)

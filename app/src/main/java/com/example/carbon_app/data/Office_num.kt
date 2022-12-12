@@ -8,8 +8,8 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "office_num")
 data class Office_num(
     @PrimaryKey(autoGenerate = true) val id: Int?,
-    @ColumnInfo(name = "block") val block: Char?,
-    @ColumnInfo(name = "Number_office") val num: Int?
+    @ColumnInfo(name = "firstName") val user_name: String?,
+    @ColumnInfo(name = "Second_name") val num: String?
 
 
 
