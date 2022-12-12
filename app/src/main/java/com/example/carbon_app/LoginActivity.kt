@@ -22,7 +22,7 @@ class LoginActivity : AppCompatActivity() {
         val imageViewGmail: ImageView = findViewById(R.id.mail)
         val imageViewMoodle: ImageView = findViewById(R.id.moodle)
         val imageViewSdu: ImageView = findViewById(R.id.mysdu)
-        val TextView : TextView = findViewById(R.id.forgotpass)
+        val textView : TextView = findViewById(R.id.forgotpass)
         login2.setOnClickListener {
             onClick()
         }
@@ -35,7 +35,7 @@ class LoginActivity : AppCompatActivity() {
         imageViewSdu.setOnClickListener {
             WebMySdu()
         }
-        TextView.setOnClickListener {
+        textView.setOnClickListener {
             sendEmail()
         }
     }

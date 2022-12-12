@@ -13,7 +13,8 @@ class ShablonFragment : Fragment() {
 
     private val mainFragment = MainFragment()
     private val secondFragment = SecondFragment()
-    private val thirdFragment = ThirdFragment()
+    private val portfolioFragment = PortfolioFragment()
+
 
 
 
@@ -31,7 +32,7 @@ class ShablonFragment : Fragment() {
             when(it.itemId){
                 R.id.home -> setNewFragment(mainFragment)
                 R.id.faculty -> setNewFragment(secondFragment)
-                R.id.person -> setNewFragment(thirdFragment)
+                R.id.person -> setNewFragment(portfolioFragment)
 
                 R.id.exit -> {val intent = Intent(context, LoginActivity::class.java)
             startActivity(intent)
@@ -49,24 +50,15 @@ class ShablonFragment : Fragment() {
         manager.replace(R.id.frame_layout, fragment)
         manager.addToBackStack(null)
         manager.commit()
-                R.id.exit -> {setNewFragment(mainFragment)}
 
             }
-            true
-        }
-        return binding.root
-    }
 
-
-    private fun setNewFragment(fragment: Fragment) {
-        if(fragment !=null){
-            val manager = childFragmentManager.beginTransaction()
-            manager.replace(R.id.frame_layout, fragment)
-            manager.commit()
         }
 
-    }
-}
+
+
+
+
 
 
 
