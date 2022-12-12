@@ -16,7 +16,7 @@
         android:layout_height="127dp"
         android:layout_gravity="center"
         android:layout_marginBottom="170dp"
-        tools:src="@drawable/panda"
+        app:srcCompat="@drawable/panda"
         android:contentDescription="TODO" />
 
     <LinearLayout
