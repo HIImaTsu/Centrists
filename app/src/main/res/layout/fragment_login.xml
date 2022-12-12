@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/l1"
-    tools:context=".LoginActivity">
+    tools:context=".LoginFragment">
 
     <TextView
         android:id="@+id/signin"
@@ -83,13 +83,14 @@
         />
 
     <TextView
-        android:id="@+id/others"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/others"
         android:layout_above="@id/socialicons"
+        android:text="Also our other used platforms"
         android:layout_centerHorizontal="true"
-        android:text="@string/quot_also_our_other_used_platforms"
-        android:textColor="#FF9800" />
+
+        />
 
 
 
@@ -103,7 +104,6 @@
 
 
         <ImageView
-            android:id="@+id/mail"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_margin="20dp"
@@ -111,18 +111,18 @@
 
 
         <ImageView
-            android:id="@+id/moodle"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_margin="20dp"
-            android:src="@drawable/moodle" />
+            android:src="@drawable/moodle"
+            />
 
         <ImageView
-            android:id="@+id/mysdu"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_margin="20dp"
-            android:src="@drawable/sdu_logo" />
+            android:src="@drawable/sdu_logo"
+            />
     </LinearLayout>
 
 
